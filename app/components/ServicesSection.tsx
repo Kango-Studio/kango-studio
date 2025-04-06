@@ -76,7 +76,7 @@ export default function ServicesSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1, duration: 0.5 }}
               viewport={{ once: true }}
-              className="bg-[#1F1B26] border border-border rounded-xl p-6 text-left hover:border-primary transition"
+              className="bg-[#1F1B26] border border-border rounded-xl p-6 text-left transition-all duration-300 transform hover:scale-105 hover:border-primary hover:shadow-2xl hover:shadow-primary/30"
             >
               <div className="text-primary text-3xl mb-4">{service.icon}</div>
               <h3 className="text-light font-semibold text-lg mb-2 font-poppins">
@@ -88,7 +88,8 @@ export default function ServicesSection() {
             </motion.div>
           ))}
         </div>
-        <button className="bg-background border border-border-geral text-primary px-4 py-2 mt-8 rounded-md font-poppins cursor-pointer hover:bg-primary hover:text-white transition hover:brightness-110 hover:border-primary">
+
+        <button className="bg-background border border-border-geral text-primary px-4 py-2 mt-12 rounded-md font-poppins cursor-pointer hover:bg-primary hover:text-white transition hover:brightness-110 hover:border-primary">
           saiba mais
         </button>
       </div>
