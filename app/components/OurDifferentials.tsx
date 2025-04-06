@@ -11,7 +11,8 @@ import {
   FaPenFancy,
 } from "react-icons/fa";
 import layoutHero from "@/app/images/layout-hero.webp";
-import kangarooIcon from "@/public/kango-icon.png"; // 🔁 substitua pela imagem real do canguru
+import kangarooIcon from "@/public/kango-icon.png";
+import Button from "./ui/Button";
 
 const items = [
   {
@@ -69,7 +70,7 @@ export default function OurDifferentials() {
               viewport={{ once: true }}
               className="text-3xl md:text-4xl font-poppins text-light font-semibold leading-snug"
             >
-              Por que escolher a <span className="text-primary">KANGO?</span>
+              Por que <span className="text-primary">escolher</span> a <span className="font-satoshi leading-tight">KAN</span><span className="text-primary font-poppins leading-tight">GO</span>?
             </motion.h2>
 
             <motion.img
@@ -94,7 +95,7 @@ export default function OurDifferentials() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1, duration: 0.6 }}
             viewport={{ once: true }}
-            className="text-light/70 mb-10 text-base leading-relaxed"
+            className="text-light/70 mb-10 text-base leading-relaxed font-satoshi"
           >
             Nossos sites vão além do visual. Eles são construídos pensados para{" "}
             <strong className="text-light font-medium">converter, escalar e performar</strong>,
@@ -117,10 +118,10 @@ export default function OurDifferentials() {
               >
                 <div>{item.icon}</div>
                 <div>
-                  <h3 className="text-sm md:text-base font-semibold text-light mb-1">
+                  <h3 className="text-sm md:text-base font-semibold text-light mb-1 font-poppins">
                     {item.title}
                   </h3>
-                  <p className="text-sm text-light/60">{item.description}</p>
+                  <p className="text-sm text-light/60 font-satoshi">{item.description}</p>
                 </div>
               </motion.li>
             ))}
@@ -133,13 +134,16 @@ export default function OurDifferentials() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="flex justify-center"
+          className="flex flex-col items-center gap-6 max-w-md mx-auto"
         >
           <img
             src={layoutHero.src}
             alt="Ilustração representativa do nosso diferencial"
             className="rounded-xl shadow-xl w-full max-w-md border border-border"
           />
+          <Button href="https://wa.me/5551999381964" variant="outline" className="w-fit">
+            Fale conosco
+          </Button>
         </motion.div>
       </div>
     </section>
