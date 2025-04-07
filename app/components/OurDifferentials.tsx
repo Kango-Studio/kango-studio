@@ -134,14 +134,25 @@ export default function OurDifferentials() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
-          className="flex flex-col items-center gap-6 max-w-md mx-auto"
+          className="relative flex flex-col items-center gap-6 max-w-md mx-auto"
         >
-          <img
+          {/* Glow em volta */}
+          <div className="absolute -top-10 -left-10 w-[320px] h-[320px] bg-primary rounded-full blur-[100px] opacity-30 z-0" />
+
+          {/* Imagem com hover */}
+          <motion.img
             src={layoutHero.src}
             alt="Ilustração representativa do nosso diferencial"
-            className="rounded-xl shadow-xl w-full max-w-md border border-border"
+            className="relative z-10 rounded-xl shadow-xl w-full max-w-md border border-border will-change-transform transition-transform duration-300 hover:scale-105"
+            whileHover={{ scale: 1.05 }}
           />
-          <Button href="https://wa.me/5551999381964" variant="outline" className="w-fit">
+
+          {/* Botão */}
+          <Button
+            href="https://wa.me/5551999381964"
+            variant="outline"
+            className="w-fit z-10 mt-4"
+          >
             Fale conosco
           </Button>
         </motion.div>
