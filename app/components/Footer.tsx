@@ -30,7 +30,7 @@ export default function Footer() {
             <span className="text-light font-satoshi">KAN</span>
             <span className="font-bold font-poppins text-primary">GO</span>
           </Link>
-          <p className="text-sm text-text-gray mt-4 leading-relaxed max-w-sm">
+          <p className="text-sm text-text-gray mt-4 font-satoshi font-medium leading-relaxed max-w-sm">
             Sites com código puro, design estratégico e foco em conversão. Do layout ao funil, tudo pensado para entregar resultado.
           </p>
         </div>
@@ -48,7 +48,7 @@ export default function Footer() {
               transition={{ delay: i * 0.05 }}
               viewport={{ once: true }}
             >
-              <Link href={link} className="hover:text-primary transition capitalize">
+              <Link href={link} className="hover:text-primary transition capitalize font-satoshi font-medium">
                 {link === "/" ? "Home" : link.replace("/", "")}
               </Link>
             </motion.div>
@@ -63,7 +63,7 @@ export default function Footer() {
           viewport={{ once: true }}
           className="flex flex-col gap-4"
         >
-          <span className="text-light font-semibold mb-2 uppercase tracking-wide">
+          <span className="text-light font-semibold mb-2 font-poppins uppercase tracking-wide">
             Fale com a gente
           </span>
           <div className="flex gap-4 text-xl">
@@ -101,7 +101,7 @@ export default function Footer() {
         whileInView={{ opacity: 1 }}
         transition={{ delay: 0.3, duration: 0.8 }}
         viewport={{ once: true }}
-        className="border-t border-border py-6 text-center text-sm text-text-gray"
+        className="border-t border-border py-6 text-center font-satoshi font-medium text-sm text-text-gray"
       >
         © {new Date().getFullYear()} KANGO Studio. Feito com ♥ em React, por devs de verdade.
       </motion.div>
