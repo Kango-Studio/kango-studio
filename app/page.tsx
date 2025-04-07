@@ -6,6 +6,7 @@ import OurDifferentials from "./Components/OurDifferentials";
 import ServicesSection from "./Components/ServicesSection";
 import TeamSection from "./Components/TeamSection";
 import TechCarousel from "./Components/TechCarousel";
+import TestimonialsSection from "./Components/TestimonialsSection";
 import ScrollToTop from "./Components/ui/ScrollToTop";
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <OurDifferentials />
       <TeamSection />
       <ComparisonSection />
+      <TestimonialsSection />
       <Footer />
       <ScrollToTop />
     </>
