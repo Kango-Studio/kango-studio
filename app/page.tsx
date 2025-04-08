@@ -1,4 +1,5 @@
 import ComparisonSection from "./Components/ComparisonSection";
+import ExpertiseKango from "./Components/ExpertiseKango";
 import Footer from "./Components/Footer";
 import Hero from "./Components/Hero";
 import Nav from "./Components/Nav";
@@ -20,6 +21,7 @@ export default function Home() {
       <TeamSection />
       <ComparisonSection />
       <TestimonialsSection />
+      <ExpertiseKango />
       <Footer />
       <ScrollToTop />
     </>
