@@ -92,6 +92,7 @@ export default function Footer() {
               <FaLinkedin />
             </a>
           </div>
+          <span className="text-text-gray text-md font-satoshi font-medium">Torres - RS</span>
         </motion.div>
       </motion.div>
 
