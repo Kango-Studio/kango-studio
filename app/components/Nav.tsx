@@ -10,7 +10,7 @@ export default function Nav() {
   const navItems = ["Home", "Sobre", "Serviços", "Portfólio", "Contato"];
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-background/80 backdrop-blur border-b border-border text-light">
+    <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur text-light">
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo */}
         <Link href="/" className="text-2xl tracking-widest">

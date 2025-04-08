@@ -76,7 +76,7 @@ export default function Hero() {
         Solicite um Orçamento
       </motion.a>
 
-      {/* Canguru animado */}
+      {/* Canguru animado
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
@@ -89,7 +89,7 @@ export default function Hero() {
           width={180}
           height={180}
         />
-      </motion.div>
+      </motion.div> */}
     </section>
   );
 }
