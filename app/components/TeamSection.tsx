@@ -73,7 +73,7 @@ export default function TeamSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1, duration: 0.6 }}
               viewport={{ once: true }}
-              className="bg-muted/10 border border-border-geral hover:border-primary rounded-xl shadow-lg p-6 w-[400px] flex flex-col items-center text-center group hover:shadow-2xs transition-all duration-300"
+              className="bg-black border border-text-dark hover:border-primary hover:border hover:scale-[1.02] rounded-xl hover:shadow-2xl p-6 w-[400px] flex flex-col items-center text-center group transition-all duration-300"
             >
               <img
                 src={member.image}
