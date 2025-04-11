@@ -25,7 +25,7 @@ export default function Nav() {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 transition={{ type: "spring", stiffness: 300 }}
-                href={`/${item.toLowerCase()}`}
+                href={item.toLowerCase() === "home" ? "/" : `/${item.toLowerCase()}`}
                 className="transition-all hover:text-primary"
               >
                 {item}
