@@ -97,6 +97,8 @@ export default function ServicesSection() {
           saiba mais
         </button>
       </div>
+      {/* Spotlight na parte inferior */}
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[150px] bg-primary blur-[480px] opacity-10 pointer-events-none z-0" />
     </section>
   );
 }
