@@ -56,7 +56,7 @@ export default function ServicesSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-3xl md:text-4xl font-satoshi text-light mb-4"
+          className="text-3xl md:text-4xl font-satoshi font-medium mb-4"
         >
           Sites que impressionam por dentro e por fora
         </motion.h2>
@@ -66,7 +66,7 @@ export default function ServicesSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-lg text-text-gray max-w-2xl mx-auto font-poppins"
+          className="text-md text-text-gray max-w-2xl font-light mx-auto font-poppins"
         >
           Nada de soluções prontas. Nós criamos experiências digitais rápidas, responsivas e otimizadas — combinando design inteligente com tecnologia de ponta.
         </motion.p>
