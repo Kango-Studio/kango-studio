@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Tilt from "react-parallax-tilt";
 import { FaLightbulb, FaCode, FaRocket, FaChartLine } from "react-icons/fa";
 import Button from "./ui/Button";
 
@@ -31,7 +32,7 @@ export default function ExpertiseKango() {
   return (
     <section className="relative py-24 px-6 text-light bg-background overflow-hidden">
       {/* Spotlight */}
-      <div className="absolute top-1/2 left-1/2 w-[600px] h-[600px] -translate-x-1/2 -translate-y-1/2 bg-primary blur-[180px] opacity-10 pointer-events-none" />
+      <div className="absolute top-0 left-1/2 w-[600px] h-[650px] -translate-x-1/2 -translate-y-1/2 bg-primary blur-[880px] opacity-10 pointer-events-none" />
 
       <div className="max-w-7xl mx-auto text-center z-10 relative">
         <motion.h2
@@ -54,15 +55,35 @@ export default function ExpertiseKango() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1, duration: 0.6 }}
               viewport={{ once: true }}
-              className="bg-white text-background border border-border rounded-xl p-6 shadow-lg hover:scale-[1.02] hover:border-primary transition-all duration-300"
             >
-              <div className="text-primary text-2xl mb-3">{item.icon}</div>
-              <h3 className="text-lg font-poppins font-semibold mb-2">
-                {item.title}
-              </h3>
-              <p className="text-sm text-background/70 font-medium font-satoshi">
-                {item.desc}
-              </p>
+              <Tilt
+                glareEnable={true}
+                glareMaxOpacity={0.2}
+                scale={1.03}
+                transitionSpeed={800}
+                tiltMaxAngleX={10}
+                tiltMaxAngleY={10}
+                className="rounded-xl"
+              >
+                <div className="bg-white text-background border border-border rounded-xl p-6 shadow-lg hover:border-primary transition-all duration-300">
+                  <motion.div
+                    initial={{ scale: 0, opacity: 0 }}
+                    whileInView={{ scale: 1, opacity: 1 }}
+                    whileHover={{ scale: 1.2 }}
+                    transition={{ duration: 0.5, ease: "backOut" }}
+                    className="text-primary text-2xl mb-3"
+                  >
+                    {item.icon}
+                  </motion.div>
+
+                  <h3 className="text-lg font-poppins font-semibold mb-2">
+                    {item.title}
+                  </h3>
+                  <p className="text-sm text-background/70 font-satoshi">
+                    {item.desc}
+                  </p>
+                </div>
+              </Tilt>
             </motion.div>
           ))}
         </div>
@@ -75,8 +96,8 @@ export default function ExpertiseKango() {
           viewport={{ once: true }}
           className="mt-10"
         >
-          <Button href="https://wa.me/5551999381964" variant="primary">
-            Saiba mais
+          <Button href="/contato" variant="primary">
+            Solicitar orçamento
           </Button>
         </motion.div>
       </div>

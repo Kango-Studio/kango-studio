@@ -38,15 +38,6 @@ const testimonials: Testimonial[] = [
 export default function TestimonialsSection() {
   return (
     <section className="relative w-full bg-background border-t border-border py-24 px-4 overflow-hidden">
-      {/* Background image decorativa */}
-      <div className="absolute inset-0 z-0">
-        <img
-          src="/background-pattern.png" // troque pela imagem que quiser
-          alt="Textura decorativa"
-          className="w-full h-full object-cover opacity-5 blur-sm"
-        />
-        <div className="absolute inset-0 bg-background/80 backdrop-blur-sm" />
-      </div>
 
       <div className="relative max-w-6xl mx-auto text-center z-10">
         <motion.h2
@@ -67,7 +58,7 @@ export default function TestimonialsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1, duration: 0.5 }}
               viewport={{ once: true }}
-              className="bg-gradient-to-b from-[#201c29] to-[#1c1822] border border-border rounded-xl p-6 text-left shadow-md hover:shadow-lg transition hover:scale-[1.02]"
+              className="bg-gradient-to-b from-[#201c29] to-[#1c1822] border border-border rounded-xl p-6 text-left shadow-lg hover:shadow-2xl transition hover:scale-[1.02]"
             >
               <FaQuoteLeft className="text-primary text-2xl mb-4" />
               <p className="text-sm text-light font-satoshi leading-relaxed mb-6">
@@ -89,6 +80,8 @@ export default function TestimonialsSection() {
           ))}
         </div>
       </div>
+
+      <div className="absolute bottom-0 left-1/2 w-[600px] h-[600px] -translate-x-1/2 translate-y-1/2 bg-primary blur-[880px] opacity-10 pointer-events-none z-0" />
     </section>
   );
 }

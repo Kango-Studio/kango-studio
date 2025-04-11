@@ -7,7 +7,7 @@ import { FaInstagram, FaWhatsapp } from "react-icons/fa6";
 
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
-  const navItems = ["Home", "Sobre", "Serviços", "Portfólio", "Contato"];
+  const navItems = ["Home", "Sobre", "Serviços", "Projetos", "Contato"];
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur text-light">

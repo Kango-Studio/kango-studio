@@ -7,14 +7,14 @@ import { FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa6";
 export default function Footer() {
   return (
     // <footer className="bg-background border-t border-border text-light relative">
-    <footer className="bg-gradient-to-tr from-primary via-[#1C1822] to-[#1C1822] border-t border-border text-light relative">
+    <footer className="bg-gradient-to-tr from-primary via-[#1C1822] to-background text-light relative">
 
       {/* Gradiente no topo */}
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
-        className="h-1 w-full bg-gradient-to-r from-primary/50 via-transparent to-primary/50"
+        className="w-full"
       />
 
       <motion.div
@@ -40,7 +40,7 @@ export default function Footer() {
           <span className="text-light font-semibold mb-2 uppercase tracking-wide">
             Navegação
           </span>
-          {["/", "/sobre", "/servicos", "/portfolio", "/contato"].map((link, i) => (
+          {["/", "/sobre", "/servicos", "/projetos", "/contato"].map((link, i) => (
             <motion.div
               key={link}
               initial={{ opacity: 0, y: 10 }}
