@@ -28,19 +28,27 @@ export default function TechCarousel() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
       viewport={{ once: true }}
-      className="w-full py-12 bg-background"
+      className="w-full py-12 bg-background relative overflow-hidden"
     >
-      <div className="max-w-[1100px] mx-auto px-4">
+      {/* Spotlight na parte inferior */}
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[150px] bg-primary blur-[480px] opacity-10 pointer-events-none z-0" />
+
+      <div className="relative max-w-[1100px] mx-auto px-4 z-10">
         <h2 className="text-center text-lg md:text-xl font-poppins text-light mb-6 uppercase tracking-widest">
           Tecnologias que usamos
         </h2>
 
-        <Marquee speed={60} gradient={false} pauseOnHover className="overflow-hidden">
-          <div className="flex gap-12 items-center">
+        <Marquee
+          speed={60}
+          gradient={false}
+          pauseOnHover
+          className="overflow-hidden h-24"
+        >
+          <div className="flex items-center">
             {[...icons, ...icons].map(({ icon, color, name }, index) => (
               <div
                 key={index}
-                className="flex flex-col gap-2 items-center text-center transform transition-transform duration-300 hover:scale-110"
+                className="mx-6 flex flex-col items-center text-center transform transition-transform duration-300 hover:scale-110"
               >
                 <div
                   className="text-4xl md:text-5xl"

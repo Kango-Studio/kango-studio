@@ -1,3 +1,4 @@
+// components/ServicesSection.tsx
 "use client";
 
 import { motion } from "framer-motion";
@@ -45,8 +46,11 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <section className="bg-background border-t border-border py-16 px-4">
-      <div className="max-w-[1100px] mx-auto text-center">
+    <section className="relative bg-background py-16 px-4 overflow-hidden">
+      {/* Gradient suave no topo para transição da hero */}
+      <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-[#0C0A11] via-[#15121A] to-transparent z-0 pointer-events-none" />
+
+      <div className="max-w-[1100px] mx-auto text-center pt-4 relative z-10">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

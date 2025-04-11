@@ -26,7 +26,7 @@ export default function ComparisonSection() {
   ];
 
   return (
-    <section className="w-full bg-background py-20 border-t border-border px-4">
+    <section className="w-full bg-background py-20 px-4">
       <div className="max-w-7xl mx-auto text-center mb-12">
         <motion.h2
           initial={{ opacity: 0, y: 10 }}

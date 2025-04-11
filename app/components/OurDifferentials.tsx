@@ -57,11 +57,12 @@ export default function OurDifferentials() {
   const [selected, setSelected] = useState(0);
 
   return (
-    <section className="w-full bg-background border-y border-border py-20">
-      <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+    <section className="w-full bg-background py-20 relative overflow-hidden">
+      <div className="absolute -top-10 left-1/2 -translate-x-1/2 w-[500px] h-[300px] bg-primary blur-[380px] opacity-[0.06] pointer-events-none z-0" />
+
+      <div className="relative max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center z-10">
         {/* Left: Texto */}
         <div>
-          {/* Título com canguru animado */}
           <div className="flex items-center justify-between md:justify-start gap-4 mb-6 flex-wrap">
             <motion.h2
               initial={{ opacity: 0, y: 10 }}
@@ -70,7 +71,9 @@ export default function OurDifferentials() {
               viewport={{ once: true }}
               className="text-3xl md:text-4xl font-poppins text-light font-semibold leading-snug"
             >
-              Por que <span className="text-primary">escolher</span> a <span className="font-satoshi leading-tight">KAN</span><span className="text-primary font-poppins leading-tight">GO</span>?
+              Por que <span className="text-primary">escolher</span> a{" "}
+              <span className="font-satoshi leading-tight">KAN</span>
+              <span className="text-primary font-poppins leading-tight">GO</span>?
             </motion.h2>
 
             <motion.img
@@ -88,7 +91,6 @@ export default function OurDifferentials() {
               className="w-10 h-10 object-contain"
             />
           </div>
-
 
           <motion.p
             initial={{ opacity: 0, y: 10 }}
@@ -121,14 +123,16 @@ export default function OurDifferentials() {
                   <h3 className="text-sm md:text-base font-semibold text-light mb-1 font-poppins">
                     {item.title}
                   </h3>
-                  <p className="text-sm text-light/60 font-satoshi">{item.description}</p>
+                  <p className="text-sm text-light/60 font-satoshi">
+                    {item.description}
+                  </p>
                 </div>
               </motion.li>
             ))}
           </ul>
         </div>
 
-        {/* Right: Imagem */}
+        {/* Right: Imagem com glow e botão */}
         <motion.div
           initial={{ opacity: 0, x: 40 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -136,10 +140,9 @@ export default function OurDifferentials() {
           viewport={{ once: true }}
           className="relative flex flex-col items-center gap-6 max-w-md mx-auto"
         >
-          {/* Glow em volta */}
+          {/* Glow ao redor da imagem */}
           <div className="absolute -top-10 -left-10 w-[320px] h-[320px] bg-primary rounded-full blur-[100px] opacity-30 z-0" />
 
-          {/* Imagem com hover */}
           <motion.img
             src={layoutHero.src}
             alt="Ilustração representativa do nosso diferencial"
@@ -147,7 +150,6 @@ export default function OurDifferentials() {
             whileHover={{ scale: 1.05 }}
           />
 
-          {/* Botão */}
           <Button
             href="https://wa.me/5551999381964"
             variant="outline"

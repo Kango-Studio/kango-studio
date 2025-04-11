@@ -37,7 +37,7 @@ const testimonials: Testimonial[] = [
 
 export default function TestimonialsSection() {
   return (
-    <section className="relative w-full bg-background border-t border-border py-24 px-4 overflow-hidden">
+    <section className="relative w-full bg-background py-24 px-4 overflow-hidden">
 
       <div className="relative max-w-6xl mx-auto text-center z-10">
         <motion.h2
