@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import Nav from "./Components/Nav";
+import Footer from "./Components/Footer";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -23,7 +25,11 @@ export default function RootLayout({
       <body
         className={`${poppins.variable} bg-background text-text-light antialiased`}
       >
-        {children}
+        <Nav />
+        <div>
+          {children}
+        </div>
+        <Footer />
       </body>
     </html>
   );

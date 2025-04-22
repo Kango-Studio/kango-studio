@@ -13,7 +13,6 @@ import ScrollToTop from "./Components/ui/ScrollToTop";
 export default function Home() {
   return (
     <>
-      <Nav />
       <Hero />
       <ServicesSection />
       <TechCarousel />
@@ -22,7 +21,6 @@ export default function Home() {
       <ComparisonSection />
       <TestimonialsSection />
       <ExpertiseKango />
-      <Footer />
       <ScrollToTop />
     </>
   );
