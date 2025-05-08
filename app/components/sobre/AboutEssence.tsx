@@ -1,28 +1,34 @@
 "use client";
 import { motion } from "framer-motion";
+import { FaBullseye, FaEye, FaGem, FaRocket } from "react-icons/fa";
 
 const essenceItems = [
   {
-    icon: "🎯",
+    icon: <FaBullseye className="text-primary text-2xl" />,
     title: "Missão",
-    description: "Transformar ideias em experiências digitais únicas, unindo performance, estética e estratégia para gerar resultados reais."
+    description:
+      "Transformar ideias em experiências digitais únicas, unindo performance, estética e estratégia para gerar resultados reais.",
   },
   {
-    icon: "👁️",
+    icon: <FaEye className="text-primary text-2xl" />,
     title: "Visão",
-    description: "Ser referência em desenvolvimento web criativo, entregando sites que não só impressionam, mas também performam."
+    description:
+      "Ser referência em desenvolvimento web criativo, entregando sites que não só impressionam, mas também performam.",
   },
   {
-    icon: "💎",
+    icon: <FaGem className="text-primary text-2xl" />,
     title: "Valores",
-    description: "Excelência técnica, transparência, compromisso com resultados e inovação constante em cada projeto."
+    description:
+      "Excelência técnica, transparência, compromisso com resultados e inovação constante em cada projeto.",
   },
   {
-    icon: "🚀",
+    icon: <FaRocket className="text-primary text-2xl" />,
     title: "Propósito",
-    description: "Impulsionar o sucesso digital dos nossos clientes através de código limpo e design estratégico."
-  }
+    description:
+      "Impulsionar o sucesso digital dos nossos clientes através de código limpo e design estratégico.",
+  },
 ];
+
 
 export default function AboutEssence() {
   return (
@@ -50,11 +56,17 @@ export default function AboutEssence() {
           {essenceItems.map((item, index) => (
             <motion.div
               key={item.title}
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: index * 0.1 }}
-              viewport={{ once: true }}
-              className="bg-[#2A2633] rounded-xl p-6 text-center"
+              whileHover={{ scale: 1.03 }}
+              transition={{
+                type: "spring",
+                stiffness: 100,
+                damping: 18,
+                delay: index * 0.1
+              }}
+              viewport={{ once: true, amount: 0.5 }}
+              className="bg-[#2A2633] rounded-xl p-6 text-center cursor-default"
             >
               <div className="w-16 h-16 bg-[#F56A84]/10 rounded-full flex items-center justify-center mx-auto mb-6">
                 <span className="text-3xl">{item.icon}</span>

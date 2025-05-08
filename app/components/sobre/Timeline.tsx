@@ -35,13 +35,13 @@ export default function Timeline() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <span className="inline-block py-1.5 px-4 bg-[#F56A84]/10 text-[#F56A84] rounded-full text-sm font-medium mb-6">
+          <span className="inline-block font-poppins py-1.5 px-4 bg-[#F56A84]/10 text-[#F56A84] rounded-full text-sm font-medium mb-6">
             NOSSA HISTÓRIA
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Nossa jornada até aqui <span className="text-[#F56A84]">🚀</span>
+          <h2 className="text-3xl font-poppins md:text-4xl font-bold mb-4">
+            Nossa jornada até aqui
           </h2>
-          <p className="text-[#888888] max-w-2xl mx-auto">
+          <p className="text-[#888888] font-satoshi max-w-2xl mx-auto">
             Uma linha do tempo que marca nossa evolução e conquistas mais importantes.
           </p>
         </motion.div>
@@ -63,11 +63,11 @@ export default function Timeline() {
                 <div className={`w-full md:w-5/12 ${index % 2 === 0 ? "md:pr-8" : "md:pl-8 md:ml-auto"
                   }`}>
                   <div className="bg-[#2A2633] rounded-xl p-6">
-                    <span className="inline-block py-1 px-3 bg-[#F56A84]/10 text-[#F56A84] rounded-full text-sm font-medium mb-4">
+                    <span className="inline-block font-poppins py-1 px-3 bg-[#F56A84]/10 text-[#F56A84] rounded-full text-sm font-medium mb-4">
                       {event.year}
                     </span>
-                    <h3 className="text-xl font-bold mb-2">{event.title}</h3>
-                    <p className="text-[#888888]">{event.description}</p>
+                    <h3 className="text-xl font-bold mb-2 font-poppins">{event.title}</h3>
+                    <p className="text-[#888888] font-satoshi">{event.description}</p>
                   </div>
                 </div>
 
