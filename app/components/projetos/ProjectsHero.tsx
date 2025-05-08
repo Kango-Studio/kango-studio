@@ -39,7 +39,7 @@ export default function ProjectsHero() {
           transition={{ duration: 0.8 }}
           className="mb-6"
         >
-          <span className="inline-block py-1.5 px-4 bg-[#F56A84]/10 text-[#F56A84] rounded-full text-sm font-medium mb-6">
+          <span className="inline-block font-poppins py-1.5 px-4 bg-[#F56A84]/10 text-[#F56A84] rounded-full text-sm font-medium mb-6">
             NOSSOS PROJETOS
           </span>
         </motion.div>
@@ -51,15 +51,15 @@ export default function ProjectsHero() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight tracking-tight"
         >
-          <span className="block">Transformamos ideias em</span>
-          <span className="text-[#F56A84]">experiências digitais</span>
+          <span className="block font-satoshi">Transformamos ideias em</span>
+          <span className="text-[#F56A84] font-satoshi">experiências digitais</span>
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="text-lg md:text-xl text-[#888888] max-w-2xl mx-auto mb-10"
+          className="text-lg md:text-xl font-satoshi text-[#888888] max-w-2xl mx-auto mb-10"
         >
           Cada projeto é uma nova oportunidade para criarmos sites que impactam,
           convertam e representem sua marca com excelência.
@@ -72,7 +72,7 @@ export default function ProjectsHero() {
         >
           <a
             href="#projetos"
-            className="py-4 px-8 bg-[#F56A84] hover:bg-[#F56A84]/90 text-white rounded-lg font-medium transition-colors duration-300 inline-flex items-center"
+            className="py-4 px-8 font-poppins bg-[#F56A84] hover:bg-[#F56A84]/90 text-white rounded-lg font-medium transition-colors duration-300 inline-flex items-center"
           >
             Ver projetos
             <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

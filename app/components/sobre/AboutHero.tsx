@@ -17,7 +17,7 @@ export default function AboutHero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <span className="inline-block py-1.5 px-4 bg-[#F56A84]/10 text-[#F56A84] rounded-full text-sm font-medium mb-6">
+            <span className="inline-block font-poppins py-1.5 px-4 bg-[#F56A84]/10 text-[#F56A84] rounded-full text-sm font-medium mb-6">
               SOBRE NÓS
             </span>
           </motion.div>
@@ -26,16 +26,16 @@ export default function AboutHero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6"
+            className="text-4xl md:text-5xl lg:text-6xl font-satoshi font-bold mb-6"
           >
-            Quem está por trás da KAN<span className="text-[#F56A84]">GO</span>?
+            Quem está por trás da KAN<span className="text-[#F56A84] font-poppins">GO</span>?
           </motion.h1>
 
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-lg md:text-xl text-[#888888] mb-10"
+            className="text-lg font-satoshi md:text-xl text-[#888888] mb-10"
           >
             Somos uma dupla movida por propósito, performance e design. Criamos
             experiências digitais que unem tecnologia, criatividade e resultado.
@@ -48,7 +48,7 @@ export default function AboutHero() {
           >
             <a
               href="#essencia"
-              className="inline-flex items-center py-4 px-8 bg-[#F56A84] hover:bg-[#F56A84]/90 text-white rounded-lg font-medium transition-colors duration-300"
+              className="inline-flex font-satoshi items-center py-4 px-8 bg-[#F56A84] hover:bg-[#F56A84]/90 text-white rounded-lg font-medium transition-colors duration-300"
             >
               Conheça nossa jornada
               <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
