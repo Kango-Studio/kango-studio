@@ -1,14 +1,13 @@
-import ComparisonSection from "./Components/ComparisonSection";
-import ExpertiseKango from "./Components/ExpertiseKango";
-import Footer from "./Components/Footer";
-import Hero from "./Components/Hero";
-import Nav from "./Components/Nav";
-import OurDifferentials from "./Components/OurDifferentials";
-import ServicesSection from "./Components/ServicesSection";
-import TeamSection from "./Components/TeamSection";
-import TechCarousel from "./Components/TechCarousel";
-import TestimonialsSection from "./Components/TestimonialsSection";
-import ScrollToTop from "./Components/ui/ScrollToTop";
+import ComparisonSection from "./components/ComparisonSection";
+import ExpertiseKango from "./components/ExpertiseKango";
+import Hero from "./components/Hero";
+import OurDifferentials from "./components/OurDifferentials";
+import ServicesSection from "./components/ServicesSection";
+import TeamSection from "./components/TeamSection";
+import TechCarousel from "./components/TechCarousel";
+import TestimonialsSection from "./components/TestimonialsSection";
+import TestimonialSlider from "./components/TestimonialsSlider";
+import ScrollToTop from "./components/ui/ScrollToTop";
 
 export default function Home() {
   return (
@@ -19,7 +18,8 @@ export default function Home() {
       <OurDifferentials />
       <TeamSection />
       <ComparisonSection />
-      <TestimonialsSection />
+      {/* <TestimonialsSection /> */}
+      <TestimonialSlider />
       <ExpertiseKango />
       <ScrollToTop />
     </>
