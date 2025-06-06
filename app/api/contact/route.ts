@@ -1,27 +1,45 @@
 import { NextResponse } from "next/server";
-import { Resend } from "resend";
-
-const resend = new Resend(process.env.RESEND_API_KEY);
+import nodemailer from "nodemailer";
 
 export async function POST(request: Request) {
   try {
     const { name, email, message } = await request.json();
 
-    const data = await resend.emails.send({
-      from: "Kango Studio <contato@kangostudio.com.br>",
-      to: ["seu@email.com"],
-      subject: `Novo contato de ${name}`,
+    // Create a transporter using Gmail
+    const transporter = nodemailer.createTransport({
+      service: "gmail",
+      auth: {
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
+      },
+    });
+
+    // Email content
+    const mailOptions = {
+      from: process.env.EMAIL_USER,
+      to: "mateuspaulart@gmail.com",
+      subject: `Novo contato do site Kango Studio - ${name}`,
       html: `
-        <h2>Novo contato recebido</h2>
+        <h2>Novo contato recebido do site</h2>
         <p><strong>Nome:</strong> ${name}</p>
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Mensagem:</strong></p>
         <p>${message}</p>
       `,
-    });
+    };
 
-    return NextResponse.json(data);
+    // Send email
+    await transporter.sendMail(mailOptions);
+
+    return NextResponse.json(
+      { message: "Email enviado com sucesso" },
+      { status: 200 }
+    );
   } catch (error) {
-    return NextResponse.json({ error: "Erro ao enviar e-mail" }, { status: 500 });
+    console.error("Erro ao enviar email:", error);
+    return NextResponse.json(
+      { message: "Erro ao enviar email" },
+      { status: 500 }
+    );
   }
 }

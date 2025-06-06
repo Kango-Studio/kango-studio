@@ -1,11 +1,12 @@
 "use client";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { Palette, Code2, Zap } from "lucide-react";
 
 const services = [
   {
     id: 1,
-    icon: "🎨",
+    icon: <Palette className="w-8 h-8 text-[#F56A84]" />,
     title: "Design UI/UX",
     description: "Interfaces intuitivas e atraentes que proporcionam a melhor experiência para seus usuários.",
     features: [
@@ -17,7 +18,7 @@ const services = [
   },
   {
     id: 2,
-    icon: "💻",
+    icon: <Code2 className="w-8 h-8 text-[#F56A84]" />,
     title: "Desenvolvimento Web",
     description: "Desenvolvimento de sites e aplicações web com as tecnologias mais modernas do mercado.",
     features: [
@@ -29,7 +30,7 @@ const services = [
   },
   {
     id: 3,
-    icon: "🚀",
+    icon: <Zap className="w-8 h-8 text-[#F56A84]" />,
     title: "Performance",
     description: "Otimização completa para garantir velocidade e eficiência em todas as interações.",
     features: [
@@ -81,7 +82,7 @@ export default function ServicesFeatures() {
               onClick={() => setActiveService(service.id)}
             >
               <div className="w-16 h-16 bg-[#F56A84]/10 rounded-full flex items-center justify-center mb-6">
-                <span className="text-3xl">{service.icon}</span>
+                {service.icon}
               </div>
 
               <h3 className="text-xl font-bold mb-4">{service.title}</h3>

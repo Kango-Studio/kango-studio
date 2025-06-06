@@ -110,7 +110,7 @@ export default function ContactForm() {
         <button
           type="submit"
           disabled={isSubmitting}
-          className={`w-full py-4 px-8 bg-[#F56A84] hover:bg-[#F56A84]/90 text-white rounded-lg font-medium transition-colors duration-300 flex items-center justify-center ${isSubmitting ? "opacity-70 cursor-not-allowed" : ""
+          className={`w-full py-4 cursor-pointer px-8 bg-[#F56A84] hover:bg-[#F56A84]/90 text-white rounded-lg font-medium transition-colors duration-300 flex items-center justify-center ${isSubmitting ? "opacity-70 cursor-not-allowed" : ""
             }`}
         >
           {isSubmitting ? (
