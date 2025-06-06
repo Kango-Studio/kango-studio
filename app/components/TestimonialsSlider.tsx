@@ -100,11 +100,11 @@ export default function TestimonialSlider() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <span className="inline-block py-1.5 px-4 bg-[#F56A84]/10 text-[#F56A84] rounded-full text-sm font-medium mb-6">
+          <span className="inline-block font-poppins py-1.5 px-4 bg-[#F56A84]/10 text-[#F56A84] rounded-full text-sm font-medium mb-6">
             DEPOIMENTOS
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">O que nossos <span className="text-[#F56A84]">clientes</span> dizem</h2>
-          <p className="text-[#888888] max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 font-poppins">O que nossos <span className="text-[#F56A84]">clientes</span> dizem</h2>
+          <p className="text-[#888888] font-satoshi max-w-2xl mx-auto">
             A satisfação dos nossos clientes é o melhor indicador da qualidade do nosso trabalho.
           </p>
         </motion.div>

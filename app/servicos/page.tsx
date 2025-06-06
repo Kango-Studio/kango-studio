@@ -1,12 +1,18 @@
-import ServicesCTA from "../components/servicos/ServicesCta";
-import ServicesGrid from "../components/servicos/ServicesGrid";
-import ServicesHero from "../components/servicos/Serviceshero";
+import ServicesCTA from "../components/servicos/ServicesCTA";
+import ServicesFeatures from "../components/servicos/ServicesFeatures";
+import ServicesHero from "../components/servicos/ServicesHero";
+import ServicesPricing from "../components/servicos/ServicesPricing";
+import ServiceProcess from "../components/servicos/ServicesProcess";
+import TestimonialSlider from "../components/TestimonialsSlider";
 
 export default function Servicos() {
   return (
     <>
       <ServicesHero />
-      <ServicesGrid />
+      <ServicesFeatures />
+      <ServiceProcess />
+      <ServicesPricing />
+      <TestimonialSlider />
       <ServicesCTA />
     </>
   );
