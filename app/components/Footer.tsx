@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa6";
+import { FaGithub, FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa6";
 
 export default function Footer() {
   return (
@@ -90,6 +90,14 @@ export default function Footer() {
               className="hover:text-primary transition"
             >
               <FaLinkedin />
+            </a>
+            <a
+              href="https://github.com/Mateusp23"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-primary transition"
+            >
+              <FaGithub />
             </a>
           </div>
           <span className="text-text-gray text-md font-satoshi font-medium">Torres - RS</span>
