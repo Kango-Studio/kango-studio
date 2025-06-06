@@ -36,7 +36,8 @@ export default function ServicesCTA() {
               className="flex flex-col sm:flex-row justify-center gap-4"
             >
               <a
-                href="/contato"
+                href="https://api.whatsapp.com/send/?phone=5551999381964&"
+                target="_blank"
                 className="py-4 px-8 bg-[#F56A84] font-poppins hover:bg-[#F56A84]/90 text-white rounded-lg font-medium transition-colors duration-300 flex items-center justify-center"
               >
                 Solicitar orçamento

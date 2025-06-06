@@ -1,23 +1,24 @@
 "use client";
 import { motion } from "framer-motion";
+import { MessageCircle, Mail, MapPin } from "lucide-react";
 
 const contactInfo = [
   {
-    icon: "📱",
+    icon: <MessageCircle className="w-6 h-6" />,
     title: "WhatsApp",
     description: "Resposta rápida via mensagem",
     action: "Abrir conversa",
     link: "https://wa.me/5551999381964"
   },
   {
-    icon: "📧",
+    icon: <Mail className="w-6 h-6" />,
     title: "E-mail",
     description: "Para propostas detalhadas",
     action: "Enviar e-mail",
     link: "mailto:contato@kangostudio.com.br"
   },
   {
-    icon: "📍",
+    icon: <MapPin className="w-6 h-6" />,
     title: "Localização",
     description: "Torres - RS",
     action: "Ver no mapa",
@@ -77,7 +78,7 @@ export default function ContactInfo() {
               className="flex items-start space-x-4"
             >
               <div className="w-12 h-12 bg-[#F56A84]/10 rounded-full flex items-center justify-center flex-shrink-0">
-                <span className="text-2xl font-satoshi">{info.icon}</span>
+                <span className="text-[#F56A84]">{info.icon}</span>
               </div>
               <div>
                 <h3 className="font-semibold mb-1">{info.title}</h3>

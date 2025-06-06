@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const plans = [
   {
     name: "Landing Page",
-    price: "4.997",
+    price: "2.997",
     description: "Ideal para campanhas e conversões",
     features: [
       "Design personalizado",
@@ -17,7 +17,7 @@ const plans = [
   },
   {
     name: "Site Institucional",
-    price: "8.997",
+    price: "5.997",
     description: "Perfeito para empresas e profissionais",
     features: [
       "Até 8 páginas personalizadas",
@@ -31,7 +31,7 @@ const plans = [
   },
   {
     name: "E-commerce",
-    price: "14.997",
+    price: "10.997",
     description: "Solução completa para vendas online",
     features: [
       "Catálogo ilimitado",
@@ -111,7 +111,7 @@ export default function ServicesPricing() {
                 </div>
 
                 <a
-                  href="#contato"
+                  href="https://wa.me/5551999381964"
                   className={`w-full py-4 font-satoshi px-6 rounded-lg font-medium text-center transition-colors duration-300 ${plan.highlight
                       ? "bg-[#F56A84] text-white hover:bg-[#F56A84]/90"
                       : "bg-[#F56A84]/10 text-[#F56A84] hover:bg-[#F56A84]/20"

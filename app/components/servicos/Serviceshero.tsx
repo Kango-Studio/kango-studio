@@ -48,7 +48,7 @@ export default function ServicesHero() {
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
             <a
-              href="#contato"
+              href="https://api.whatsapp.com/send/?phone=5551999381964&"
               className="py-4 px-8 bg-[#F56A84] hover:bg-[#F56A84]/90 text-white rounded-lg font-medium transition-colors duration-300 flex items-center justify-center"
             >
               Solicitar orçamento

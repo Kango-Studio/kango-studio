@@ -1,13 +1,16 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
+import { StaticImageData } from "next/image";
+
+import imageLucasRibeiro from "../images/profile-lucas-ribeiro.jpg"
 
 type Testimonial = {
   id: number;
   name: string;
   role: string;
   company: string;
-  image: string;
+  image: string | StaticImageData;
   quote: string;
   projectName: string;
 };
@@ -15,30 +18,30 @@ type Testimonial = {
 const testimonials: Testimonial[] = [
   {
     id: 1,
-    name: "Marina Silva",
-    role: "Diretora de Marketing",
-    company: "Harduston",
-    image: "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    quote: "O site desenvolvido pela Kango Studio superou todas as nossas expectativas. O aumento nas conversões foi imediato e nossa marca ganhou um novo patamar de credibilidade online.",
-    projectName: "Harduston E-commerce"
+    name: "Otávio Borges",
+    role: "Desenvolvedor FullStack",
+    company: "Bizzer - Clube de Negócios",
+    image: "https://github.com/otavioborgsm.png",
+    quote: "O Mateus e a Kango são incriveis, ótimo desenvolvedor com pensamentos e habilidades majestosas, realiza um ótimo trabalho em nossa plataforma.",
+    projectName: "Bizzer"
   },
   {
     id: 2,
-    name: "Rafael Mendes",
+    name: "Lucas Ribeiro",
     role: "CEO",
-    company: "Somos Hon",
-    image: "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    quote: "A equipe da Kango entendeu perfeitamente nossa visão de negócio e traduziu isso em uma plataforma digital que comunica exatamente o que queremos para nossos clientes.",
-    projectName: "Portal Corporativo Hon"
+    company: "Lucas Ribeiro Psicologia",
+    image: imageLucasRibeiro,
+    quote: "A equipe da Kango entendeu perfeitamente minha visão de negócio e traduziu isso em uma plataforma digital que comunica exatamente o que queremos para nossos clientes.",
+    projectName: "viverpsico.com"
   },
   {
     id: 3,
-    name: "Fernanda Martins",
-    role: "Dermatologista",
-    company: "Clínica Dermato",
-    image: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    quote: "Meu site se tornou uma ferramenta essencial para meu consultório. Os pacientes frequentemente mencionam como encontraram meus serviços online e como o agendamento digital facilitou o processo.",
-    projectName: "Dermato Fernanda"
+    name: "Luiz Felipe",
+    role: "Sócio Investidor",
+    company: "Bizzer - Clube de Negócios",
+    image: "https://github.com/luizfsc.png",
+    quote: "Nossa plataforma está linda, responsiva e rápida, com codigo de qualidade, graças a Kango e o desenvolvedor Mateus. Recomendo e indico de olhos fechados!",
+    projectName: "Bizzer"
   }
 ];
 
@@ -127,9 +130,8 @@ export default function TestimonialSlider() {
                   <div className="md:col-span-4 flex flex-col items-center md:items-start">
                     <div className="relative w-24 h-24 rounded-full overflow-hidden mb-4 border-4 border-[#F56A84]/20">
                       <img
-                        src={testimonial.image}
+                        src={typeof testimonial.image === 'string' ? testimonial.image : testimonial.image.src}
                         alt={testimonial.name}
-                        fill
                         style={{ objectFit: "cover" }}
                       />
                     </div>
