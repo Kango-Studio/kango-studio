@@ -47,7 +47,8 @@ const services = [
 export default function ServicesSection() {
   return (
     <section className="relative py-16 md:py-24 px-6 md:px-4 overflow-hidden">
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[300px] bg-primary blur-[380px] opacity-[0.06] pointer-events-none z-0" />
+      {/* Escurecimento suave no topo */}
+      <div className="absolute -top-10 left-0 w-full h-50 bg-gradient-to-b from-[#0a0010] to-transparent z-10 pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto text-center z-10">
         <motion.h2

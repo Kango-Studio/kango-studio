@@ -18,7 +18,7 @@ export default function Hero() {
 
   return (
     <section
-      className="relative h-screen flex flex-col justify-center items-center text-light px-6 overflow-hidden bg-cover bg-center"
+      className="relative h-screen flex flex-col justify-center items-center text-light px-6 overflow-hidden bg-cover bg-center z-0"
       style={{ backgroundImage: `url(${bgImage.src})` }}
     >
       {/* Background Glow */}
@@ -90,6 +90,7 @@ export default function Hero() {
           height={180}
         />
       </motion.div> */}
+        
     </section>
   );
 }
