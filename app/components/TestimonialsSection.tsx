@@ -37,20 +37,19 @@ const testimonials: Testimonial[] = [
 
 export default function TestimonialsSection() {
   return (
-    <section className="relative w-full bg-background py-24 px-4 overflow-hidden">
-
-      <div className="relative max-w-6xl mx-auto text-center z-10">
+    <section className="relative w-full bg-background py-16 md:py-24 px-6 md:px-4 overflow-hidden">
+      <div className="relative max-w-6xl w-full mx-auto text-center z-10">
         <motion.h2
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-3xl md:text-4xl font-poppins font-semibold text-light mb-12"
+          className="text-3xl md:text-4xl font-poppins font-semibold text-light mb-8 md:mb-12 px-4 md:px-0"
         >
           Além dos <span className="text-primary">resultados</span>, parceiros que confiam
         </motion.h2>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-6 md:gap-8">
           {testimonials.map((t, index) => (
             <motion.div
               key={index}

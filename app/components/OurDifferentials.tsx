@@ -60,7 +60,7 @@ export default function OurDifferentials() {
     <section className="w-full bg-background py-20 relative overflow-hidden">
       <div className="absolute -top-10 left-1/2 -translate-x-1/2 w-[500px] h-[300px] bg-primary blur-[380px] opacity-[0.06] pointer-events-none z-0" />
 
-      <div className="relative max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center z-10">
+      <div className="relative max-w-7xl w-full mx-auto px-4 grid md:grid-cols-2 gap-12 items-center z-10">
         {/* Left: Texto */}
         <div>
           <div className="flex items-center justify-between md:justify-start gap-4 mb-6 flex-wrap">

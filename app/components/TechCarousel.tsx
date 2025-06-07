@@ -33,7 +33,7 @@ export default function TechCarousel() {
       {/* Spotlight na parte inferior */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[150px] bg-primary blur-[480px] opacity-10 pointer-events-none z-0" />
 
-      <div className="relative max-w-[1100px] mx-auto px-4 z-10">
+      <div className="relative max-w-[1100px] w-full mx-auto px-4 z-10">
         <h2 className="text-center text-lg md:text-xl font-poppins text-light mb-6 uppercase tracking-widest">
           Tecnologias que usamos
         </h2>

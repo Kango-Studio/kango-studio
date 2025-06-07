@@ -3,7 +3,6 @@
 import bgImage from "@/app/images/bg-hero.webp";
 import { useEffect, useState } from "react";  
 import { motion } from "framer-motion";
-import Image from "next/image";
 
 const words = ["Hipnotizam", "Conectam", "Convertem", "Impressionam"];
 
@@ -67,7 +66,8 @@ export default function Hero() {
 
       {/* CTA */}
       <motion.a
-        href="/contato"
+        href="https://wa.me/5551999381964"
+        target="_blank"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.6, duration: 0.6 }}

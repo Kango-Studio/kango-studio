@@ -54,7 +54,7 @@ const team: Member[] = [
 export default function TeamSection() {
   return (
     <section className="w-full bg-background py-20 px-4">
-      <div className="max-w-7xl mx-auto text-center">
+      <div className="max-w-7xl w-full mx-auto text-center">
         <motion.h2
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}

@@ -7,7 +7,7 @@ export default function ServicesCTA() {
       <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-[#F56A84]/5 to-transparent"></div>
       <div className="absolute bottom-0 left-0 w-1/3 h-full bg-gradient-to-r from-[#F56A84]/5 to-transparent"></div>
 
-      <div className="container mx-auto px-4 md:px-8 relative z-10">
+      <div className="w-full px-4 md:px-8 relative z-10">
         <div className="max-w-4xl mx-auto bg-[#2A2633] rounded-2xl p-8 md:p-12 shadow-xl">
           <div className="text-center">
             <motion.div

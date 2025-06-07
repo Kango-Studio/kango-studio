@@ -44,13 +44,13 @@ export default function TeamManifestoSection() {
       {/* Spotlight decorativo */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[350px] bg-primary blur-[200px] opacity-20 pointer-events-none z-0" />
 
-      <div className="relative z-10 max-w-6xl mx-auto text-center">
+      <div className="relative z-10 max-w-6xl w-full mx-auto text-center">
         <span className="inline-block font-poppins py-1.5 px-4 bg-[#F56A84]/20 text-[#F56A84] rounded-full text-sm font-medium mb-6">
           NOSSA EQUIPE
         </span>
       </div>
       
-      <div className="relative z-10 max-w-6xl mx-auto text-center">
+      <div className="relative z-10 max-w-6xl w-full mx-auto text-center">
         <motion.h2
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}

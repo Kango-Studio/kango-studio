@@ -10,14 +10,14 @@ export default function AboutHero() {
         style={{ filter: "blur(2px)" }}
       ></div>
 
-      <div className="container mx-auto px-4 md:px-8 relative z-20">
+      <div className="w-full px-6 md:px-8 relative z-20">
         <div className="max-w-4xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <span className="inline-block font-poppins py-1.5 px-4 bg-[#F56A84]/10 text-[#F56A84] rounded-full text-sm font-medium mb-6">
+            <span className="inline-block font-poppins py-1.5 px-4 bg-[#F56A84]/10 text-[#F56A84] rounded-full text-sm font-medium mb-8">
               SOBRE NÓS
             </span>
           </motion.div>
@@ -26,7 +26,7 @@ export default function AboutHero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-4xl md:text-5xl lg:text-6xl font-satoshi font-bold mb-6"
+            className="text-4xl md:text-5xl lg:text-6xl font-satoshi font-bold mb-8"
           >
             Quem está por trás da KAN<span className="text-[#F56A84] font-poppins">GO</span>?
           </motion.h1>
@@ -35,7 +35,7 @@ export default function AboutHero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="text-lg font-satoshi md:text-xl text-[#888888] mb-10"
+            className="text-base md:text-lg lg:text-xl font-satoshi text-[#888888] mb-12 px-4 md:px-0"
           >
             Somos uma dupla movida por propósito, performance e design. Criamos
             experiências digitais que unem tecnologia, criatividade e resultado.

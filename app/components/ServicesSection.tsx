@@ -46,33 +46,32 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <section className="relative bg-background py-16 px-4 overflow-hidden">
-      {/* Gradient suave no topo para transição da hero */}
-      <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-[#0C0A11] via-[#15121A] to-transparent z-0 pointer-events-none" />
+    <section className="relative py-16 md:py-24 px-6 md:px-4 overflow-hidden">
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[300px] bg-primary blur-[380px] opacity-[0.06] pointer-events-none z-0" />
 
-      <div className="max-w-[1100px] mx-auto text-center pt-4 relative z-10">
+      <div className="relative max-w-7xl mx-auto text-center z-10">
         <motion.h2
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-3xl md:text-4xl font-satoshi font-medium mb-4"
+          className="text-3xl md:text-4xl font-poppins font-semibold text-light mb-8 md:mb-12 px-4 md:px-0"
         >
-          Sites que impressionam por dentro e por fora
+          Nossos <span className="text-primary">serviços</span>
         </motion.h2>
 
         <motion.p
-          initial={{ opacity: 0, y: 20 }}
+          initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.2, duration: 0.6 }}
+          transition={{ delay: 0.1, duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-md text-text-gray max-w-2xl font-light mx-auto font-poppins"
+          className="text-light/70 mb-10 text-base md:text-lg leading-relaxed font-satoshi max-w-3xl mx-auto px-4 md:px-0"
         >
-          Nada de soluções prontas. Nós criamos experiências digitais rápidas, responsivas e otimizadas — combinando design inteligente com tecnologia de ponta.
+          Desenvolvemos soluções digitais completas que impulsionam seu negócio,
+          desde a criação de sites até a implementação de estratégias de marketing digital.
         </motion.p>
 
-        {/* Cards */}
-        <div className="grid md:grid-cols-3 gap-8 mt-12">
+        <div className="grid md:grid-cols-3 gap-6 md:gap-8 mt-8 md:mt-12">
           {services.map((service, index) => (
             <motion.div
               key={index}
@@ -93,7 +92,7 @@ export default function ServicesSection() {
           ))}
         </div>
 
-        <button className="bg-background border border-border-geral text-primary px-4 py-2 mt-12 rounded-md font-poppins cursor-pointer hover:bg-primary hover:text-white transition hover:brightness-110 hover:border-primary">
+        <button className="bg-background border border-border-geral text-primary px-4 py-2 mt-8 md:mt-12 rounded-md font-poppins cursor-pointer hover:bg-primary hover:text-white transition hover:brightness-110 hover:border-primary">
           saiba mais
         </button>
       </div>

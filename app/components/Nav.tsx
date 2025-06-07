@@ -78,7 +78,7 @@ export default function Nav() {
               {navItems.map((item) => (
                 <li key={item}>
                   <Link
-                    href={`/${item.toLowerCase()}`}
+                    href={item.toLowerCase() === "home" ? "/" : `/${item.toLowerCase()}`}
                     onClick={() => setIsOpen(false)}
                     className="hover:text-primary transition"
                   >
