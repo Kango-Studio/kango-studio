@@ -2,6 +2,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 import {
   FaBolt,
   FaCode,
@@ -93,9 +94,11 @@ export default function ServicesSection() {
           ))}
         </div>
 
-        <button className="bg-background border border-border-geral text-primary px-4 py-2 mt-8 md:mt-12 rounded-md font-poppins cursor-pointer hover:bg-primary hover:text-white transition hover:brightness-110 hover:border-primary">
-          saiba mais
-        </button>
+        <Link href="/servicos">
+          <button className="bg-background border border-border-geral text-primary px-4 py-2 mt-8 md:mt-12 rounded-md font-poppins cursor-pointer hover:bg-primary hover:text-white transition hover:brightness-110 hover:border-primary">
+            saiba mais
+          </button>
+        </Link>
       </div>
       {/* Spotlight na parte inferior */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[150px] bg-primary blur-[480px] opacity-10 pointer-events-none z-0" />

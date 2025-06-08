@@ -16,6 +16,10 @@ export const metadata: Metadata = {
     "A Kango Studio desenvolve sites ultra rápidos, 100% personalizados em código puro (Next.js, React, Tailwind), com design sofisticado, SEO avançado e foco em conversão.",
   keywords: [
     "desenvolvimento de sites",
+    "sites",
+    "pagina de vendas",
+    "landing page",
+    "site institucional",
     "next.js",
     "sites premium",
     "sites personalizados",

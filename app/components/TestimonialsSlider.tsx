@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { StaticImageData } from "next/image";
 
-import imageLucasRibeiro from "../images/profile-lucas-ribeiro.jpg"
+import imageLucasRibeiro from "../images/lucas-ribeiro.jpg"
 
 type Testimonial = {
   id: number;
@@ -168,7 +168,7 @@ export default function TestimonialSlider() {
               <button
                 key={index}
                 onClick={() => handleDotClick(index)}
-                className={`w-3 h-3 rounded-full transition-all duration-300 ${currentSlide === index ? "bg-[#F56A84] w-6" : "bg-[#2A2633]"
+                className={`w-3 cursor-pointer h-3 rounded-full transition-all duration-300 ${currentSlide === index ? "bg-[#F56A84] w-6" : "bg-[#2A2633]"
                   }`}
                 aria-label={`Go to slide ${index + 1}`}
               />
@@ -181,7 +181,7 @@ export default function TestimonialSlider() {
                 prevSlide();
                 resetInterval();
               }}
-              className="w-10 h-10 flex items-center justify-center rounded-full bg-[#2A2633] text-white hover:bg-[#F56A84] transition-colors duration-300"
+              className="w-10 cursor-pointer h-10 flex items-center justify-center rounded-full bg-[#2A2633] text-white hover:bg-[#F56A84] transition-colors duration-300"
               aria-label="Previous testimonial"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -196,7 +196,7 @@ export default function TestimonialSlider() {
                 nextSlide();
                 resetInterval();
               }}
-              className="w-10 h-10 flex items-center justify-center rounded-full bg-[#2A2633] text-white hover:bg-[#F56A84] transition-colors duration-300"
+              className="w-10 cursor-pointer h-10 flex items-center justify-center rounded-full bg-[#2A2633] text-white hover:bg-[#F56A84] transition-colors duration-300"
               aria-label="Next testimonial"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
