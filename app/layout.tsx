@@ -16,6 +16,8 @@ export const metadata: Metadata = {
     "A Kango Studio desenvolve sites ultra rápidos, 100% personalizados em código puro (Next.js, React, Tailwind), com design sofisticado, SEO avançado e foco em conversão.",
   keywords: [
     "desenvolvimento de sites",
+    "kango",
+    "kango studiio",
     "sites",
     "pagina de vendas",
     "landing page",
@@ -32,7 +34,7 @@ export const metadata: Metadata = {
     "web design",
     "copywriting para sites",
   ],
-  metadataBase: new URL("https://kangostudio.com"), // Substitua pela sua URL real
+  metadataBase: new URL("https://kangostudio.com"),
   openGraph: {
     title: "Kango Studio | Sites premium em código puro",
     description:
@@ -47,7 +49,7 @@ export const metadata: Metadata = {
     title: "Kango Studio | Sites premium em código puro",
     description:
       "Sites rápidos e sofisticados com performance, design e estratégia.",
-    site: "@kango", // Se tiver perfil
+    site: "@kango",
   },
 };
 
@@ -58,22 +60,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <head>
-        <meta charSet="UTF-8" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, maximum-scale=1"
-        />
-        <link rel="canonical" href="https://kangostudio.com/" />
-        <meta name="robots" content="index, follow" />
-        <meta name="author" content="Kango Studio" />
-        <link rel="icon" href="./kango-icon.png" /> {/* Adicione se tiver */}
-      </head>
       <body
         className={`${poppins.variable} bg-background text-text-light antialiased`}
       >
         <Nav />
-        <div>{children}</div>
+        <main>{children}</main>
         <Footer />
       </body>
     </html>
