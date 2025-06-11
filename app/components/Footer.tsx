@@ -40,7 +40,7 @@ export default function Footer() {
           <span className="text-light font-semibold mb-2 uppercase tracking-wide">
             Navegação
           </span>
-          {["/", "/sobre", "/servicos", "/projetos", "/contato"].map((link, i) => (
+          {["/", "/sobre", "/servicos", "/projetos", "/contato", "/privacidade"].map((link, i) => (
             <motion.div
               key={link}
               initial={{ opacity: 0, y: 10 }}
@@ -76,7 +76,7 @@ export default function Footer() {
               <FaWhatsapp />
             </a>
             <a
-              href="https://instagram.com/kangostudio"
+              href="https://instagram.com/kangostudiio"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-primary transition"
