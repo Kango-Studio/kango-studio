@@ -69,8 +69,7 @@ export default function ServicesSection() {
           viewport={{ once: true }}
           className="text-light/70 mb-10 text-base md:text-lg leading-relaxed font-satoshi max-w-3xl mx-auto px-4 md:px-0"
         >
-          Desenvolvemos soluções digitais completas que impulsionam seu negócio,
-          desde a criação de sites até a implementação de estratégias de marketing digital.
+          Criamos landing pages e sites personalizados, cuidando de tudo — da concepção à implementação final.
         </motion.p>
 
         <div className="grid md:grid-cols-3 gap-6 md:gap-8 mt-8 md:mt-12">

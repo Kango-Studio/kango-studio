@@ -15,7 +15,7 @@ const timelineEvents = [
   {
     year: "2023",
     title: "Primeiro case de grande impacto",
-    description: "Desenvolvimento do e-commerce Harduston, nosso primeiro grande case de sucesso."
+    description: "Desenvolvimento do app GoMotors, nosso primeiro grande case de sucesso."
   },
   {
     year: "2024",

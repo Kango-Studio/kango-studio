@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import { StaticImageData } from "next/image";
 
 import imageLucasRibeiro from "../images/lucas-ribeiro.jpg"
+import imageLucasLima from "../images/lucas-sm-profile.jpeg"
+import imageLeonardoBorges from "../images/leonardo-borges-profile.jpg"
 
 type Testimonial = {
   id: number;
@@ -27,12 +29,12 @@ const testimonials: Testimonial[] = [
   },
   {
     id: 2,
-    name: "Lucas Ribeiro",
-    role: "CEO",
-    company: "Lucas Ribeiro Psicologia",
+    name: "Lucas Prado",
+    role: "Sócio Fundador",
+    company: "Lucas Prado Psicologia",
     image: imageLucasRibeiro,
     quote: "A equipe da Kango entendeu perfeitamente minha visão de negócio e traduziu isso em uma plataforma digital que comunica exatamente o que queremos para nossos clientes.",
-    projectName: "viverpsico.com"
+    projectName: "Lucas Prado Psicologia"
   },
   {
     id: 3,
@@ -42,7 +44,25 @@ const testimonials: Testimonial[] = [
     image: "https://github.com/luizfsc.png",
     quote: "Nossa plataforma está linda, responsiva e rápida, com codigo de qualidade, graças a Kango e o desenvolvedor Mateus. Recomendo e indico de olhos fechados!",
     projectName: "Bizzer"
-  }
+  },
+  {
+    id: 4,
+    name: "Lucas Silva",
+    role: "Sócio Fundador",
+    company: "Financeiramente",
+    image: imageLucasLima,
+    quote: "A KANGO não fez só um site. Criou presença, impacto e estrutura pra vender. Entenderam minha visão e entregaram mais do que eu esperava.",
+    projectName: "Financeiramente App"
+  },
+  {
+    id: 5,
+    name: "Leonardo Borges",
+    role: "Sócio Fundador",
+    company: "Icore Solutions",
+    image: imageLeonardoBorges,
+    quote: "Excelente plataforma digital, profissionais acima da média, alto desempenho para comunicação com nossos clientes! Aprovo e recomendo 👏🏼👏🏼",
+    projectName: "Icore Solutions"
+  },
 ];
 
 export default function TestimonialSlider() {

@@ -1,4 +1,9 @@
+# *
 User-agent: *
 Allow: /
-Disallow: /admin/
+
+# Host
+Host: https://kangostudio.com
+
+# Sitemaps
 Sitemap: https://kangostudio.com/sitemap.xml

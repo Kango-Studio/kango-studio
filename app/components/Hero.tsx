@@ -46,11 +46,10 @@ export default function Hero() {
         transition={{ duration: 0.6 }}
         className="text-5xl md:text-6xl font-satoshi font-bold leading-tight text-center z-10"
       >
-        Sites Premium que{" "}
+        Sites e Landing Pages{" "}
         {/* <span className="text-primary transition-all duration-500">
           {words[index]}
         </span>{" "} */}
-        Convertem
       </motion.h1>
 
       {/* Sub */}
@@ -60,8 +59,7 @@ export default function Hero() {
         transition={{ delay: 0.3, duration: 0.6 }}
         className="mt-4 text-lg md:text-xl font-satoshi z-10 text-center"
       >
-        Desenvolvemos experiências digitais sob medida que encantam visitantes
-        e transformam cliques em clientes.
+        Desenvolvemos experiências digitais por meio de sites que transformam cliques em clientes
       </motion.p>
 
       {/* CTA */}

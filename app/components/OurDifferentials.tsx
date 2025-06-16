@@ -99,9 +99,9 @@ export default function OurDifferentials() {
             viewport={{ once: true }}
             className="text-light/70 mb-10 text-base leading-relaxed font-satoshi"
           >
-            Nossos sites vão além do visual. Eles são construídos pensados para{" "}
-            <strong className="text-light font-medium">converter, escalar e performar</strong>,
-            com tecnologias de ponta e uma equipe experiente em cada área.
+            Utilizamos as mesmas tecnologias adotadas por empresas como <strong>Netflix,
+              Facebook, Carrefour e McDonald's</strong> — com uma equipe experiente e especializada
+            em performance digital.
           </motion.p>
 
           <ul className="space-y-4">
