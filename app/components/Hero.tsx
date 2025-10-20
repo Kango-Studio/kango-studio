@@ -1,5 +1,6 @@
 'use client'
 
+import Image from "next/image";
 import bgImage from "@/app/images/bg-hero.webp";
 import { useEffect, useState } from "react";  
 import { motion } from "framer-motion";
@@ -17,10 +18,18 @@ export default function Hero() {
   }, []);
 
   return (
-    <section
-      className="relative h-screen flex flex-col justify-center items-center text-light px-6 overflow-hidden bg-cover bg-center z-0"
-      style={{ backgroundImage: `url(${bgImage.src})` }}
-    >
+    <section className="relative h-screen flex flex-col justify-center items-center text-light px-6 overflow-hidden z-0">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src={bgImage}
+          alt="Background"
+          fill
+          priority
+          className="object-cover"
+          sizes="100vw"
+        />
+      </div>
       {/* Background Glow */}
       {/* <motion.div
         initial={{ opacity: 0 }}

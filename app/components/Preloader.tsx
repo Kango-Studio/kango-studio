@@ -3,6 +3,7 @@
 // components/Preloader.tsx
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 export default function Preloader() {
   const [loading, setLoading] = useState(true);
@@ -22,7 +23,13 @@ export default function Preloader() {
           transition={{ duration: 0.5 }}
         >
           {/* Aqui você pode colocar uma animação Lottie ou SVG */}
-          <img src="./kango-icon.png" alt="Carregando..." className="w-24 h-24 animate-bounce" />
+          <Image 
+            src="/kango-icon.png" 
+            alt="Carregando..." 
+            width={96}
+            height={96}
+            className="animate-bounce" 
+          />
         </motion.div>
       )}
     </AnimatePresence>

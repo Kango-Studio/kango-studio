@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { StaticImageData } from "next/image";
 
 import imageLucasRibeiro from "../images/lucas-ribeiro.jpg"
@@ -149,10 +150,12 @@ export default function TestimonialSlider() {
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
                   <div className="md:col-span-4 flex flex-col items-center md:items-start">
                     <div className="relative w-24 h-24 rounded-full overflow-hidden mb-4 border-4 border-[#F56A84]/20">
-                      <img
-                        src={typeof testimonial.image === 'string' ? testimonial.image : testimonial.image.src}
+                      <Image
+                        src={typeof testimonial.image === 'string' ? testimonial.image : testimonial.image}
                         alt={testimonial.name}
-                        style={{ objectFit: "cover" }}
+                        fill
+                        className="object-cover"
+                        sizes="96px"
                       />
                     </div>
                     <h4 className="text-xl font-semibold">{testimonial.name}</h4>
